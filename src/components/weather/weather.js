@@ -14,7 +14,7 @@ const Weather =({weatherData})=>{
         <div>
             <div>
                 <p>Город: {weatherData.name}
-                    <img src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png}`} alt="Icon Weather" />
+                    <img src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="Icon Weather" />
                 </p>
                 <p>Температура: {(weatherData.main.temp-273.15).toFixed(2)}°C</p>
                 <p>Давление: {weatherData.main.pressure} Па</p>
